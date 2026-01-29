@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Массажные практики</title>
+
+  <!-- Google Fonts: SPA / Premium / Calm -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+<div class="bg">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="blob blob--3"></div>
+  <div class="noise"></div>
+</div>
+
+
+<!-- Шапка / навигация -->
+<header class="header">
+    <div class="container">
+        <a href="#home" class="logo">Массаж &amp; Осознанность</a>
+        <nav class="nav">
+            <a href="#home">Главная</a>
+            <a href="#practices">Практики</a>
+            <a href="#session">Как проходит</a>
+            <a href="#benefits">Польза</a>
+            <a href="#contact">Запись</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Главный экран -->
+<section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="container hero__content">
+        <h1>Тихая перезагрузка для тела</h1>
+<p>Массажные практики, где можно отпустить напряжение, вернуться в дыхание и снова почувствовать себя живым.</p>
+<a href="#contact" class="btn">Мягко записаться</a>
+
+    </div>
+</section>
+
+<!-- Практики -->
+<section id="practices" class="practices">
+    <div class="container">
+        <h2>Наши практики</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Классический массаж</h3>
+                <p>Подходит для снятия мышечного напряжения и улучшения кровообращения. Идеален после физической нагрузки или долгого рабочего дня.</p>
+            </div>
+            <div class="card">
+                <h3>Арома‑терапия</h3>
+                <p>Использование эфирных масел для глубокого расслабления и эмоционального баланса. Помогает справиться со стрессом.</p>
+            </div>
+            <div class="card">
+                <h3>Телесно‑ориентированная терапия</h3>
+                <p>Мягкие техники, направленные на расслабление и улучшение связи с телом. Рекомендуется при зажимах и хронической усталости.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Как проходит сессия -->
+<section id="session" class="session">
+    <div class="container">
+        <h2>Как проходит сессия</h2>
+        <div class="steps">
+            <div class="step">
+                <h4>Приветствие и настрой</h4>
+                <p>Мы знакомимся, обсуждаем ваше состояние и пожелания, чтобы подобрать подходящую практику.</p>
+            </div>
+            <div class="step">
+                <h4>Сеанс</h4>
+                <p>Массаж проводится в спокойной обстановке. Вы можете полностью расслабиться и довериться процессу.</p>
+            </div>
+            <div class="step">
+                <h4>Рекомендации</h4>
+                <p>После сеанса вы получите рекомендации по самоподдержке, дыхательным техникам и упражнениям.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Польза и результаты -->
+<section id="benefits" class="benefits">
+    <div class="container">
+        <h2>Польза и результаты</h2>
+        <ul class="benefits__list">
+            <li>✔ Улучшение качества сна</li>
+            <li>✔ Снижение уровня стресса и тревожности</li>
+            <li>✔ Уменьшение болей и зажимов</li>
+            <li>✔ Повышение осознанности и энергии</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Форма записи -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Записаться на сессию</h2>
+        <p>Оставьте свои данные, и мы свяжемся с вами, чтобы согласовать удобное время.</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" rows="4" placeholder="Сообщение (необязательно)"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Массаж &amp; Осознанность — все права защищены.</p>
+    </div>
+</footer>
+
+<script>
+// Простейшая обработка формы. При желании можно интегрировать с серверной логикой.
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Спасибо за заявку! Мы с вами свяжемся.');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
